@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+.container header {
+    width: 100%;
+    height: 8vh;
+    padding: 20px 0 20px 60px;
+
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+
+    color: white;
+    background-color: #051A2D;
+}
+
+.container header img {
+    height: 90%;
+}
+
+.container-main-content {
+    display: flex;
+}
+
+.sidebar-menu {
+    width: 10vw;
+    height: 90vh;
+    border-radius: 30px 0 0 30px;
+    background-color: #52376f;
+}
+
+.sidebar-menu h2 {
+    color: white;
+    font-size: 2em;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu ul {
+    display: flex;
+    row-gap: 50px;
+    align-items: center;
+    flex-direction: column;
+
+    list-style: none;
+}
+
+.sidebar-menu ul li a h3 {
+    color: white;
+}
+
+.main-content {
+    width: 65vw;
+    padding: 30px 50px;
+
+    background-color: #e7eaf3;
+}
+
+.list-text-main-content {
+    margin-bottom: 25px;
+    padding: 25px 0 25px 0;
+
+    display: flex;
+    column-gap: 16px;
+}
+
+.list-text-main-content img {
+    width: 18px;
+}
+
+hr {
+    border: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.header-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.header-main-content .title-header-main-content {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header-main-content-img {
+    color: white;
+    height: 40px;
+    padding: 0 6px;
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: #051A2D;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-main-content-img:hover {
+    cursor: pointer;
+}
+
+.formulario {
+    width: 600px;
+    height: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: lightsteelblue;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+}
+
+.formulario .sub-adicionar {
+    margin: 20px 0;
+    font-size: 32px;
+}
+
+.formulario .dividir {
+    margin-bottom: 80px;
+}
+
+form .container-input {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+
+    margin-bottom: 100px;
+}
+
+form .container-input div label input {
+    margin-top: 26px;
+}
+
+.container-input div input#tarefa {
+    width: 300px;
+    padding: 2px;
+}
+
+.btn-adicionar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-adicionar button {
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.btn-adicionar button:hover {
+    cursor: pointer;
+}
+
+#btn-add {
+    border: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #52376f;
+}
+
+#btn-cancel {
+    border: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: red;
+}
+
+.side-bar-card-status {
+    width: 25vw;
+    background-color: white;
+}
+
+.tp-head {
+    padding: 5px 0;
+}
+
+.descricao-main-content ul {
+    display: flex;
+    list-style: none;
+}
+
+.task-name {
+    width: 50%;;
+}
+
+.start {
+    width: 15%;;
+}
+
+.deadline {
+    width: 15%;
+}
+
+.status {
+    width: 20%;
+}
+
+.subtitle-description {
+    font-weight: bold;
+    color: darkgrey;
+}
+
+.cont-container {
+    padding: 20px 20px;
+}
+
+.notification-section {
+    margin-bottom: 20px;
+    padding: 30px 50px 30px 0;
+
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: end;
+}
+
+.sininho {
+    width: 32px;
+}
+
+.foto-perfil {
+    width: 72px;
+}
+
+.card-person {
+    width: 80%;
+    height: 200px;
+    padding: 15px;
+    background-color: #52376f;
+
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+.description-information {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.description-information img {
+    width: 56px;
+}
+
+.description-information div {
+    padding-left: 15px;
+}
+
+.description-information div p strong {
+    color: white;
+    font-size: 22px;
+}
+
+.description-information div p {
+    padding: 3px;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.line-regress {
+    width: 100%;
+    height: 16px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #FED9B7, #F07167);
+
+    margin-bottom: 20px;
+}
+
+.count-advance {
+    display: flex;
+    justify-content: space-between;
+}
+
+.count-advance div {
+    color: white;
+}
+
+.card-person ul {
+    display: flex;
+    padding: 10px 15px 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-person ul li {
+    color: white;
+    font-size: 16px;
+}
+
+.bio {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.bio h4 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.bio p {
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+#lista-de-tarefas-nome {
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+}
+
+#lista-de-tarefas-datainicial {
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+}
+
+#lista-de-tarefas-dataTermino {
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+}
+
+#lista-de-tarefas-status {
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+}
+
+.cont-container ul li:hover {
+    cursor: pointer;
+}

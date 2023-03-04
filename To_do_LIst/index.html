@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <title>My Tasks</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./images/sticky-note.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container">    
+        <header>
+            <img src="./images/to-do.png" alt="">
+
+            <h1>
+                My Tasks
+            </h1>
+        </header>
+        
+        <div class="container-main-content">
+            <section class="sidebar-menu">
+                <h2>Projetos</h2>
+
+                <ul>
+                    <li><a href="#"><h3>Project 01</h3></a></li>
+                </ul>
+            </section>
+
+            <section class="main-content">
+                <div class="list-text-main-content">
+                    <img src="./images/checklist.png" alt="">
+                    <span>
+                        Task List
+                    </span>
+                </div>
+
+                <div class="header-main-content">
+                    <div class="title-header-main-content">
+                        Tasks
+                    </div>
+
+                    <button type="submit" class="header-main-content-img">
+                        Nova Tarefa
+                    </button>
+
+                    <div class="formulario">
+                        <div class="sub-adicionar">Qual tarefa deseja adicionar:</div>
+                        <hr class="dividir">
+                        <form>
+                            <div class="container-input">
+                                <div>
+                                    <label for="tarefa"><strong>Nome da Tarefa:</strong></label>
+                                    <br>
+                                    <input type="text" name="tarefa" id="tarefa" required>
+                                </div>
+    
+                                <div>
+                                    <label for="data-termino-tarefa"><strong>Deadline Tarefa:</strong></label>
+                                    <br>
+                                    <input type="date" name="data-termino-tarefa" id="data-termino-tarefa">
+                                </div>
+                            </div>
+
+                            <div class="btn-adicionar">
+                                <button type="submit" id="btn-add">Adicionar</button>
+                                <button type="submit" id="btn-cancel">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="descricao-main-content">
+                    <ul>
+                        <li class="task-name">
+                            <div class="subtitle-description tp-head">Task Name</div>
+                            <hr>
+
+                            <div class="content-subtitle-description cont-container">
+                                <ul id="lista-de-tarefas-nome">
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="start">
+                            <div class="subtitle-description tp-head">Start</div>
+                            <hr>
+
+                            <div class="content-subtitle-description cont-container">
+                                <ul id="lista-de-tarefas-datainicial">
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="deadline">
+                            <div class="subtitle-description tp-head">Deadline</div>
+                            <hr>
+
+                            <div class="content-subtitle-description cont-container">
+                                <ul id="lista-de-tarefas-dataTermino">
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="status">
+                            <div class="subtitle-description tp-head">Number</div>
+                            <hr>
+
+                            <div class="content-subtitle-description cont-container">
+                                <ul id="lista-de-tarefas-status">
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+            </section>
+
+            <section class="side-bar-card-status">
+
+                <div class="notification-section">
+                    <img src="./images/notificacao.png" alt="" class="sininho">
+                    <img src="./images/perfil.png" alt="" class="foto-perfil">
+                </div>
+
+                <div class="card-person">
+                    <div class="description-information">
+                        <img src="./images/menina.png" alt="">
+                        <div>
+                            <p><strong>Sofia Siqueira</strong></p>
+                            <p>Full Satck Developer Python</p>
+                        </div>
+                    </div>
+                    
+                    <div class="count-advance">
+                        <div>0%</div>
+                        <div>50%</div>
+                        <div>100%</div>
+                    </div>
+
+                    <div class="line-regress"></div>
+
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                    </ul>
+                </div>
+
+                <div class="bio">
+                    <h4>Bio</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Perspiciatis perferendis dignissimos veritatis ipsa, exercitationem 
+                        corporis reiciendis nostrum molestiae laudantium quae, placeat nam 
+                        debitis error. Maiores, eum? Numquam quod reprehenderit dignissimos 
+                        cum non labore vitae sit inventore, aspernatur assumenda, velit 
+                        consequuntur ullam magnam officiis? Fugit beatae voluptas modi unde 
+                        commodi amet!
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- https://dribbble.com/shots/14816605-Task-List-and-Details/attachments/6524494?mode=media  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
