@@ -1,0 +1,212 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container-page {
+    min-width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.container-form {
+    width: 600px;
+    padding: 20px 20px 60px 20px;
+    min-height: 200px;
+    background-color: rgba(255, 255, 255, 0.040);
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+form label {
+    padding: 4px 0 4px 6px;
+}
+
+form input {
+    color: white;
+    font-size: 18px;
+    padding: 6px 0 6px 4px;
+
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+
+    background-color: transparent;
+}
+
+.position_label {
+    position: relative;
+}
+
+.box_form_label {
+    position: relative;
+
+    top: 20px;
+    transition: 0.3s;
+}
+
+.position_label:hover .box_form_label {
+    top: 0;
+}
+
+form input:focus,
+select:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.container_img {
+    position: relative;
+}
+
+.img_input {
+    height: 16px;
+    position: absolute;
+
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box_form_1 {
+    height:  80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 25px 0;
+}
+
+select {
+    padding: 0 6px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    
+    color: white;
+    background-color: transparent;
+}
+
+#nome {
+    width: 350px;
+}
+
+#box_data_nascimento {
+    width: 150px;
+}
+
+#cpf {
+    width: 220px;
+}
+
+.telefone_container {
+    display: flex;
+    column-gap: 10px;
+}
+
+#telefone {
+    width: 200px;
+}
+
+.item_email_box {
+    width: 540px;
+    margin: 0 auto;
+}
+
+.box_email {
+    margin-bottom: 50px;
+}
+
+#email {
+    width: 530px;
+}
+
+.box_endereco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 60px;
+}
+
+#tipo_endereco {
+    width: 120px;
+}
+
+.label_box_endereco {
+    width: 100%;
+}
+
+.container_box_endereco {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 25px;
+}
+
+#endereco {
+    width: 400px;
+}
+
+.box_numero_endereco {
+   width: 70px; 
+}
+
+.box_numero_cep {
+    width: 150px;
+}
+
+.box_final_numero_cep {
+    display: flex;
+    column-gap: 12px;
+    justify-content: baseline;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-size: 12px;
+}
+
+.btn_box {
+    text-align: center;
+}
+
+.btn_box button {
+    width: 200px;
+
+    border: 0;
+    border-radius: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    padding: 8px 16px;
+
+    background-color: white;
+}
+
+.btn_box button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <title>Cadastro</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Maven+Pro:wght@400;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,700&family=Roboto&family=Roboto+Slab:wght@200;300;600;900&family=Sarala:wght@400;700&family=Space+Grotesk:wght@300;400;700&family=Vollkorn:wght@400;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container-page">
+
+        <section class="container-form">
+
+            <h1>Cadastro</h1>
+
+            <form>
+                <div class="box_form_1">
+                    <div class="box_nome position_label">
+                        <label for="nome" class="box_form_label box_form_label_nome">Nome Completo</label>
+    
+                        <div class="container_img">
+                            <img src="./images/usuario-masculino.png" alt="#" class="img_input">
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                    </div>
+    
+                    <div class="box_data_nascimento position_label">
+                        <label for="data_nascimento">Data Nascimento</label>
+    
+                        <div>
+                            <input type="date" name="box_data_nascimento" id="box_data_nascimento" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box_form_1">
+                    <div class="box_cpf position_label">
+                        <label for="cpf" class="box_form_label box_form_label_cpf">CPF</label>
+    
+                        <div class="container_img">
+                            <img src="./images/carteira-de-identidade.png" alt="#" class="img_input">
+                            <input type="text" name="cpf" id="cpf" size="11" required>
+                        </div>
+                    </div>
+    
+                    <div class="box_telefone position_label">
+                        <label for="telefone">Telefone</label>
+                        
+                        <div class="telefone_container">
+                            <select name="tipo_telefone" id="tipo_telefone">
+                                <option value="celular" selected>Móvel</option>
+                                <option value="fixo">Fixo</option>
+                            </select>
+        
+                            <div class="container_img">
+                                <img src="./images/telefone-fixo.png" alt="#" class="img_input">
+                                <input type="tel" name="telefone" id="telefone" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box_email position_label">
+                    <div class="item_email_box">
+                        <label for="email" class="box_form_label box_form_label_email">E-mail</label>
+
+                        <div class="container_img container_email_box">
+                            <img src="./images/email.png" alt="#" class="img_input">
+                            <input type="email" name="email" id="email" required> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box_endereco position_label">
+                    <div>
+                        <label for="endereco" class="label_box_endereco">Endereço</label>
+
+                        <div>
+                            <div class="container_box_endereco">
+                                <select name="tipo_endereco" id="tipo_endereco">
+                                    <option value="casa" selected>Casa</option>
+                                    <option value="apartamento">Apartamento</option>
+                                </select>
+            
+                                <div class="container_img">
+                                    <img src="./images/endereco-residencial.png" alt="#" class="img_input">
+                                    <input type="text" name="endereco" id="endereco" required placeholder="Rua/Avenida">
+                                </div>
+                            </div>
+        
+                            <div class="box_final_numero_cep">
+                                <input type="text" placeholder="Num." class="box_numero_endereco" required>
+                                <input type="text" placeholder="CEP" class="box_numero_cep" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn_box">
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
