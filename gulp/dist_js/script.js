@@ -1,0 +1,1 @@
+window.ಠ_ಠ343=function(){var ಠ_ಠ342=document.getElementsByClassName("img_box_galeria");document.getElementById("qtd_img").ಠ_ಠ344=ಠ_ಠ342.length+" Foto(s)."};
